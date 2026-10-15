@@ -1,4 +1,3 @@
-[https://capsule-render.vercel.app/api?type=waving&color=0:0F2027,50:203A43,100:2C5364&height=200&section=header&text=SeongHyeon%20Kim%20%7C%20Cloud%20Engineer&fontSize=36&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C%EB%A5%BC%20%EC%84%A4%EA%B3%84%ED%95%98%EA%B3%A0%2C%20%EC%9A%B4%EC%98%81%ED%95%98%EB%A9%B0%2C%20%EC%95%88%EC%A0%84%ED%95%98%EA%B2%8C%20%EC%A7%80%ED%82%A4%EB%8A%94%20%EB%A9%80%ED%8B%B0%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C%20%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&descAlignY=60&descSize=16]
 
 [[https://img.shields.io/badge/Notion_Portfolio-000000?style=for-the-badge&logo=notion&logoColor=white]](https://discovered-echinodon-22b.notion.site/7f606eb186c183f0bf3c01738996c796)
 [[https://img.shields.io/badge/GitHub-qorgh529-181717?style=for-the-badge&logo=github&logoColor=white]](https://github.com/qorgh529)
