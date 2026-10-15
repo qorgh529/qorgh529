@@ -65,7 +65,7 @@
 | **네트워크&nbsp;접근&nbsp;보안** | **상**&nbsp;(33개월) | • NSG · 방화벽 정책 · 접근 제어 관리 및 오픈소스 VPN 경유 구성<br>• Application Gateway(L7) 비정상 접속 자동 차단 및 패킷·침해사고 분석 |
 | **AWS&nbsp;·&nbsp;NCP** | **중**&nbsp;(33개월) | • 라이브 게임 서버 인프라 운영 및 Azure 환경으로의 단계적 무장애 이관 |
 | **VMware&nbsp;·&nbsp;Proxmox** | **중**&nbsp;(29개월) | • 사내 가상화 서버 23대 운영 관리 및 Proxmox 기반 개발·테스트 환경 구축 |
-| **GCP&nbsp;·&nbsp;Kubernetes** | **중**&nbsp;(집중&nbsp;과정) | • GCP 3-Tier 고가용성 아키텍처 구축 및 멀티클라우드 사이버 복구(DR) 설계<br>• 홈랩 Kubernetes + Gitea + ArgoCD 기반 GitOps 자동 배포 파이프라인 구축 |
+| **GCP&nbsp;·&nbsp;Kubernetes** | **중**&nbsp;(집중&nbsp;과정) | • GCP 3-Tier 고가용성 아키텍처 구축, 멀티클라우드 사이버 복구(DR) 기획 중<br>• 홈랩 Kubernetes + Gitea + ArgoCD 기반 GitOps 자동 배포 파이프라인 구축 |
 
 </details>
 
@@ -125,7 +125,7 @@
 
 | 기간 | 교육기관&nbsp;·&nbsp;과정 | 주요 학습 및 수행 내용 |
 | :---: | :--- | :--- |
-| `2026.06–2026.12` | **베스핀글로벌**<br><sub>멀티클라우드&nbsp;부트캠프&nbsp;5회차&nbsp;(1,000h)</sub> | • AWS · Azure · GCP · NCP 멀티클라우드 인프라 구축 및 운영<br>• GCP 3-Tier 아키텍처 구축 및 멀티클라우드 사이버 복구(DR) 팀 프로젝트 수행 |
+| `2026.06–2026.12` | **베스핀글로벌**<br><sub>멀티클라우드&nbsp;부트캠프&nbsp;5회차&nbsp;(1,000h)</sub> | • AWS · Azure · GCP · NCP 멀티클라우드 인프라 구축 및 운영<br>• GCP 3-Tier 아키텍처 구축 팀 프로젝트 수행, 멀티클라우드 사이버 복구(DR) 팀 프로젝트 기획 중 |
 | `2020.03–2020.09` | **코리아AI아카데미**<br><sub>정보시스템&nbsp;보안&nbsp;운영·사고분석&nbsp;(868h)</sub> | • Linux/Windows 서버 운영 및 네트워크(VLAN·라우팅·Wireshark 패킷 분석)<br>• 모의해킹·취약점·침해사고 분석 및 보안 솔루션(Firewall·VPN) 운영 |
 | `2016.03–2020.02` | **인하공업전문대학**<br><sub>금속재료과&nbsp;·&nbsp;전문학사&nbsp;졸업</sub> | • 금속재료 전공 |
 
