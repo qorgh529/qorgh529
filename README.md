@@ -1,8 +1,7 @@
-
-[[https://img.shields.io/badge/Notion_Portfolio-000000?style=for-the-badge&logo=notion&logoColor=white]](https://discovered-echinodon-22b.notion.site/7f606eb186c183f0bf3c01738996c796)
-[[https://img.shields.io/badge/GitHub-qorgh529-181717?style=for-the-badge&logo=github&logoColor=white]](https://github.com/qorgh529)
-[[https://img.shields.io/badge/Gmail-qorgh529%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white]](mailto:qorgh529@gmail.com)
-[[https://img.shields.io/badge/Kakao-qorgh529%40kakao.com-FFCD00?style=for-the-badge&logo=kakaotalk&logoColor=black]](mailto:qorgh529@kakao.com)
+[![Notion Portfolio](https://img.shields.io/badge/Notion_Portfolio-000000?style=for-the-badge&logo=notion&logoColor=white)](https://discovered-echinodon-22b.notion.site/7f606eb186c183f0bf3c01738996c796)
+[![GitHub-qorgh529](https://img.shields.io/badge/GitHub-qorgh529-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/qorgh529)
+[![Gmail-qorgh529@gmail.com](https://img.shields.io/badge/Gmail-qorgh529%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:qorgh529@gmail.com)
+[![Kakao-qorgh529@kakao.com](https://img.shields.io/badge/Kakao-qorgh529%40kakao.com-FFCD00?style=for-the-badge&logo=kakaotalk&logoColor=black)](mailto:qorgh529@kakao.com)
 
 ## 👋 About Me
 
@@ -25,36 +24,36 @@
 ## 🛠️ Tech Stack
 
 ### Cloud & Virtualization
-[https://img.shields.io/badge/Microsoft_Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white]
-[https://img.shields.io/badge/Google_Cloud-4285F4?style=flat-square&logo=googlecloud&logoColor=white]
-[https://img.shields.io/badge/Amazon_AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white]
-[https://img.shields.io/badge/Naver_Cloud-03C75A?style=flat-square&logo=naver&logoColor=white]
-[https://img.shields.io/badge/VMware-607078?style=flat-square&logo=vmware&logoColor=white]
-[https://img.shields.io/badge/Proxmox-E57000?style=flat-square&logo=proxmox&logoColor=white]
+![Microsoft Azure](https://img.shields.io/badge/Microsoft_Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
+![Google Cloud](https://img.shields.io/badge/Google_Cloud-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
+![Amazon AWS](https://img.shields.io/badge/Amazon_AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white)
+![Naver Cloud](https://img.shields.io/badge/Naver_Cloud-03C75A?style=flat-square&logo=naver&logoColor=white)
+![VMware](https://img.shields.io/badge/VMware-607078?style=flat-square&logo=vmware&logoColor=white)
+![Proxmox](https://img.shields.io/badge/Proxmox-E57000?style=flat-square&logo=proxmox&logoColor=white)
 
 ### Container & GitOps
-[https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white]
-[https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white]
-[https://img.shields.io/badge/ArgoCD-EF7B4D?style=flat-square&logo=argo&logoColor=white]
-[https://img.shields.io/badge/Gitea-609926?style=flat-square&logo=gitea&logoColor=white]
-[https://img.shields.io/badge/Nginx_Ingress-009639?style=flat-square&logo=nginx&logoColor=white]
-[https://img.shields.io/badge/cert--manager-326CE5?style=flat-square&logo=letsencrypt&logoColor=white]
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![ArgoCD](https://img.shields.io/badge/ArgoCD-EF7B4D?style=flat-square&logo=argo&logoColor=white)
+![Gitea](https://img.shields.io/badge/Gitea-609926?style=flat-square&logo=gitea&logoColor=white)
+![Nginx Ingress](https://img.shields.io/badge/Nginx_Ingress-009639?style=flat-square&logo=nginx&logoColor=white)
+![cert-manager](https://img.shields.io/badge/cert--manager-326CE5?style=flat-square&logo=letsencrypt&logoColor=white)
 
 ### Network, Security & Monitoring
-[https://img.shields.io/badge/Azure_Firewall_&_NSG-0078D4?style=flat-square&logo=microsoftazure&logoColor=white]
-[https://img.shields.io/badge/GCP_Cloud_Armor-4285F4?style=flat-square&logo=googlecloud&logoColor=white]
-[https://img.shields.io/badge/SoftEther_VPN-00599C?style=flat-square&logo=openvpn&logoColor=white]
-[https://img.shields.io/badge/Azure_Monitor-0078D4?style=flat-square&logo=microsoftazure&logoColor=white]
-[https://img.shields.io/badge/Cloud_Monitoring-4285F4?style=flat-square&logo=googlecloud&logoColor=white]
-[https://img.shields.io/badge/Nagios-181717?style=flat-square&logo=linux&logoColor=white]
+![Azure Firewall & NSG](https://img.shields.io/badge/Azure_Firewall_%26_NSG-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
+![GCP Cloud Armor](https://img.shields.io/badge/GCP_Cloud_Armor-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
+![SoftEther VPN](https://img.shields.io/badge/SoftEther_VPN-00599C?style=flat-square&logo=wireguard&logoColor=white)
+![Azure Monitor](https://img.shields.io/badge/Azure_Monitor-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
+![Cloud Monitoring](https://img.shields.io/badge/Cloud_Monitoring-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
+![Nagios](https://img.shields.io/badge/Nagios-000000?style=flat-square&logo=nagios&logoColor=white)
 
 ### OS, Middleware & Automation
-[https://img.shields.io/badge/Rocky_Linux_&_Ubuntu-FCC624?style=flat-square&logo=linux&logoColor=black]
-[https://img.shields.io/badge/Windows_Server_(IIS]-0078D6?style=flat-square&logo=windows&logoColor=white)
-[https://img.shields.io/badge/Apache_&_Tomcat-F8DC75?style=flat-square&logo=apachetomcat&logoColor=black]
-[https://img.shields.io/badge/PowerShell_&_Shell-5391FE?style=flat-square&logo=powershell&logoColor=white]
-[https://img.shields.io/badge/Azure_CLI-0078D4?style=flat-square&logo=microsoftazure&logoColor=white]
-[https://img.shields.io/badge/Git_&_GitHub-F05032?style=flat-square&logo=git&logoColor=white]
+![Rocky Linux & Ubuntu](https://img.shields.io/badge/Rocky_Linux_%26_Ubuntu-FCC624?style=flat-square&logo=linux&logoColor=black)
+![Windows Server (IIS)](https://img.shields.io/badge/Windows_Server_%28IIS%29-0078D6?style=flat-square&logo=windows&logoColor=white)
+![Apache & Tomcat](https://img.shields.io/badge/Apache_%26_Tomcat-F8DC75?style=flat-square&logo=apachetomcat&logoColor=black)
+![PowerShell & Shell](https://img.shields.io/badge/PowerShell_%26_Shell-5391FE?style=flat-square&logo=powershell&logoColor=white)
+![Azure CLI](https://img.shields.io/badge/Azure_CLI-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
+![Git & GitHub](https://img.shields.io/badge/Git_%26_GitHub-F05032?style=flat-square&logo=git&logoColor=white)
 
 <details>
 <summary><b>📊 기술별 실무 숙련도 및 활용 근거 펼쳐보기 (Click)</b></summary>
@@ -81,7 +80,7 @@
 <summary><b>🔍 아키텍처 및 핵심 구현 상세 보기 (Click)</b></summary>
 
 - **AWS 3계정 격리 아키텍처**: `백업 계정(상시)` · `DNS 계정(상시)` · `DR 계정(평시 비용 0원)`으로 권한 및 네트워크 격리
-- **불변 백업 및 데이터 무결성**: AWS Lambda가 WIF(Workload Identity Federation) 단방향 읽기 권한으로 GCP 데이터를 Pull하고, SHA-256 해시 검증 후 **S3 Object Lock(Compliance 모드)**으로 위변조 원천 차단
+- **불변 백업 및 데이터 무결성**: AWS Lambda가 WIF(Workload Identity Federation) 단방향 읽기 권한으로 GCP 데이터를 Pull하고, SHA-256 해시 검증 후 **S3 Object Lock**(Compliance 모드)으로 위변조 원천 차단
 - **클린 빌드 & 수동 DNS 전환**: 오염 시점을 특정할 수 없는 컨테이너 이미지 대신 AWS CodeBuild에서 클린 소스로 재빌드하고, 공격 표면 노출 방지를 위해 Route 53(TTL 60초) 수동 Failover 및 자체 JWT 인증 적용
 
 </details>
@@ -148,8 +147,10 @@
 
 ## 📊 GitHub Stats
 
-[https://github-readme-stats.vercel.app/api?username=qorgh529&show_icons=true&theme=tokyonight&hide_border=true]
-[https://github-readme-stats.vercel.app/api/top-langs/?username=qorgh529&layout=compact&theme=tokyonight&hide_border=true]
+<p align="center">
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=qorgh529&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub Stats" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=qorgh529&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" />
+</p>
 
 ## 📫 Contact
 
