@@ -71,19 +71,10 @@
 
 ## 🚀 Featured Projects
 
-### 1. 멀티클라우드 사이버 복구(DR) 프로젝트 (`nova-final`)
+### 1. 멀티클라우드 사이버 복구(DR) 프로젝트 (`nova-final`) · 🧪 기획 단계
 - **Repository**: [github.com/qorgh529/nova-final](https://github.com/qorgh529/nova-final) · [bespin-nova-final-team3/was](https://github.com/bespin-nova-final-team3/was)
-- **개요**: CI/CD 공급망 공격으로 주 클라우드(GCP) 조직 권한이 탈취된 재난 상황을 가정하여, 신원 체계가 완전히 분리된 **AWS 불변 백업 및 클린 빌드 환경으로 핵심 서비스를 복구**하는 멀티클라우드 DR 프로젝트
+- **개요**: 주 클라우드(GCP)가 공급망 공격으로 장악된 상황을 가정하고, 분리된 AWS 환경의 불변 백업으로 핵심 서비스를 복구하는 멀티클라우드 DR 아이디어
 - **담당 역할**: GCP 3-Tier 인프라 WAS 구성(Tomcat MIG, 골든 이미지, Auto Scaling·헬스 체크) 및 아키텍처 설계·핸드오프 문서화
-
-<details>
-<summary><b>🔍 아키텍처 및 핵심 구현 상세 보기 (Click)</b></summary>
-
-- **AWS 3계정 격리 아키텍처**: `백업 계정(상시)` · `DNS 계정(상시)` · `DR 계정(평시 비용 0원)`으로 권한 및 네트워크 격리
-- **불변 백업 및 데이터 무결성**: AWS Lambda가 WIF(Workload Identity Federation) 단방향 읽기 권한으로 GCP 데이터를 Pull하고, SHA-256 해시 검증 후 **S3 Object Lock**(Compliance 모드)으로 위변조 원천 차단
-- **클린 빌드 & 수동 DNS 전환**: 오염 시점을 특정할 수 없는 컨테이너 이미지 대신 AWS CodeBuild에서 클린 소스로 재빌드하고, 공격 표면 노출 방지를 위해 Route 53(TTL 60초) 수동 Failover 및 자체 JWT 인증 적용
-
-</details>
 
 ### 2. GCP 3-Tier 구축 프로젝트 NOVA (PROFIT 동물병원 Lift & Shift)
 - **Repository**: [github.com/bespin-nova/WAS](https://github.com/bespin-nova/WAS) · [github.com/bespin-nova/WEB](https://github.com/bespin-nova/WEB)
