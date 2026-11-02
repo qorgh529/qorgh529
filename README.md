@@ -19,6 +19,7 @@
 | **인프라&nbsp;비용&nbsp;최적화** | 라이선스 및 워크로드 분석 기반 **Azure Dedicated Host 도입으로 월 25% 비용 절감** | `Azure Dedicated Host` `VM` |
 | **보안&nbsp;위협&nbsp;자동&nbsp;차단** | IP당 1분 500회 이상 비정상 요청 탐지 시 **NSG Deny 자동 등록 및 메일 알림** 구현 | `Application Gateway` `Azure CLI` `NSG` |
 | **고가용성&nbsp;·&nbsp;관측성** | 멀티존 MIG 오토스케일링(2→4대 확장 검증) 및 **DB `DELETE` 감사 로그 실시간 Slack 알림** | `GCP Compute Engine` `Cloud Monitoring` |
+| **EKS&nbsp;무중단&nbsp;운영** | 카나리 배포·graceful shutdown으로 **롤링 재시작 중 요청 실패 0건(923건)**, 450 req/s 부하에서 **KEDA·Karpenter 자동 확장(was 2→8, 노드 2→5)·5xx 0건** | `Amazon EKS` `Karpenter` `KEDA` `Gateway API` |
 | **가상화&nbsp;·&nbsp;GitOps** | 사내 가상화 서버 **23대 운영** 및 홈랩 **K8s + Gitea + ArgoCD 자동 배포 파이프라인** 구축 | `VMware` `Proxmox` `Kubernetes` `ArgoCD` |
 
 ## 🛠️ Tech Stack
@@ -33,6 +34,8 @@
 
 ### Container & GitOps
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
+![Amazon EKS](https://img.shields.io/badge/Amazon_EKS-FF9900?style=flat-square&logo=amazoneks&logoColor=white)
+![Karpenter & KEDA](https://img.shields.io/badge/Karpenter_%26_KEDA-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![ArgoCD](https://img.shields.io/badge/ArgoCD-EF7B4D?style=flat-square&logo=argo&logoColor=white)
 ![Gitea](https://img.shields.io/badge/Gitea-609926?style=flat-square&logo=gitea&logoColor=white)
@@ -46,6 +49,8 @@
 ![Azure Monitor](https://img.shields.io/badge/Azure_Monitor-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
 ![Cloud Monitoring](https://img.shields.io/badge/Cloud_Monitoring-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
 ![Nagios](https://img.shields.io/badge/Nagios-000000?style=flat-square&logo=nagios&logoColor=white)
+![Prometheus & Grafana](https://img.shields.io/badge/Prometheus_%26_Grafana-E6522C?style=flat-square&logo=prometheus&logoColor=white)
+![OpenTelemetry](https://img.shields.io/badge/OpenTelemetry-000000?style=flat-square&logo=opentelemetry&logoColor=white)
 
 ### OS, Middleware & Automation
 ![Rocky Linux & Ubuntu](https://img.shields.io/badge/Rocky_Linux_%26_Ubuntu-FCC624?style=flat-square&logo=linux&logoColor=black)
@@ -63,7 +68,7 @@
 | :--- | :---: | :--- |
 | **MS&nbsp;Azure** | **상**&nbsp;(33개월) | • VM · NSG · Application Gateway · Monitor 운영 및 AWS·NCP → Azure 이관<br>• Azure Dedicated Host 도입으로 월 25% 비용 절감 및 클라우드 보안 점검 |
 | **네트워크&nbsp;접근&nbsp;보안** | **상**&nbsp;(33개월) | • NSG · 방화벽 정책 · 접근 제어 관리 및 오픈소스 VPN 경유 구성<br>• Application Gateway(L7) 비정상 접속 자동 차단 및 패킷·침해사고 분석 |
-| **AWS&nbsp;·&nbsp;NCP** | **중**&nbsp;(33개월) | • 라이브 게임 서버 인프라 운영 및 Azure 환경으로의 단계적 무장애 이관 |
+| **AWS&nbsp;·&nbsp;NCP** | **중**&nbsp;(33개월) | • 라이브 게임 서버 인프라 운영 및 Azure 환경으로의 단계적 무장애 이관<br>• Amazon EKS 기반 3-Tier 서비스 구축·운영 (VPC·RDS Multi-AZ·WAF·IRSA·CodeBuild를 스크립트로 재현) |
 | **VMware&nbsp;·&nbsp;Proxmox** | **중**&nbsp;(29개월) | • 사내 가상화 서버 23대 운영 관리 및 Proxmox 기반 개발·테스트 환경 구축 |
 | **GCP&nbsp;·&nbsp;Kubernetes** | **중**&nbsp;(집중&nbsp;과정) | • GCP 3-Tier 고가용성 아키텍처 구축, 멀티클라우드 사이버 복구(DR) 기획 중<br>• 홈랩 Kubernetes + Gitea + ArgoCD 기반 GitOps 자동 배포 파이프라인 구축 |
 
@@ -71,12 +76,32 @@
 
 ## 🚀 Featured Projects
 
-### 1. 멀티클라우드 사이버 복구(DR) 프로젝트 (`nova-final`) · 🧪 기획 단계
+### 1. Amazon EKS 기반 3-Tier 서비스 운영 (`eks-petclinic-3tier`)
+- **Repository**: [github.com/qorgh529/eks-petclinic-3tier](https://github.com/qorgh529/eks-petclinic-3tier)
+- **기간 및 규모**: `2026.10` (10-22 ~ 10-28) · 1인 개인 프로젝트 (베스핀글로벌 부트캠프 중간프로젝트 II)
+- **개요**: WAR 기반 Spring PetClinic을 컨테이너로 만들어 AWS 서울 리전 **EKS 1.36**에 올리고, 고가용성·자동 확장·보안·관측성·무중단 배포·백업·비용 관리를 **VPC부터 배포까지 스크립트와 매니페스트로 재현 가능하게** 구축
+- **아키텍처 흐름**: `사용자 → Route 53 → WAF · ALB(HTTPS) → NGINX Gateway Fabric(HTTPRoute 카나리 90:10) → web(Nginx) → was(Tomcat 11) → RDS MySQL 8.4 Multi-AZ(TLS)`
+
+<details>
+<summary><b>🔍 핵심 구현 및 검증 결과 보기 (Click)</b></summary>
+
+- **카나리 배포**: 0%에서 `X-Canary` 헤더로 web → was → DB 경로를 검증한 뒤 개방, 비율 변경만으로 **약 3초 롤백** → 잘못된 이미지 배포 2회를 사용자 영향 없이 차단
+- **자동 확장**: was는 KEDA(요청률), web은 HPA(CPU), 노드는 Karpenter(On-Demand 우선·Spot 확장) → **k6 450 req/s에서 was 2→8개, 노드 2→5대, 276,139건 중 5xx 0건, p95 48 ms**
+- **보안**: WAF 관리형 규칙 + 직원 경로 IP 허용(우회 시도 5종 모두 403), 컨트롤러별 IRSA로 정적 키 제거, NetworkPolicy 기본 차단, DB 계정 3분리, Secrets Manager + ESO
+- **관측성**: Prometheus·Grafana·Alertmanager(Slack), OpenTelemetry → Tempo 분산 트레이싱으로 stable/canary 버전별 RED 비교
+- **주요 트러블슈팅 (19건 중)**:
+  1. **롤링 재시작 중 502/504**: Pod 종료와 EndpointSlice 제외 사이 틈을 `preStop` 15초로 메워 **요청 실패 707건 중 2건 → 923건 중 0건**
+  2. **롤아웃 후 Pod가 한 AZ로 쏠림**: 분산 계산에 구버전 Pod가 포함되는 문제를 `matchLabelKeys: [pod-template-hash]` 로 해결
+  3. **404에 5xx 오경보**: Tomcat `errorCount` 가 4xx까지 세는 것을 확인하고 OTel 상태 코드 기반 규칙 + promtool 테스트로 교체
+
+</details>
+
+### 2. 멀티클라우드 사이버 복구(DR) 프로젝트 (`nova-final`) · 🧪 기획 단계
 - **Repository**: [github.com/qorgh529/nova-final](https://github.com/qorgh529/nova-final) · [bespin-nova-final-team3/was](https://github.com/bespin-nova-final-team3/was)
 - **개요**: 주 클라우드(GCP)가 공급망 공격으로 장악된 상황을 가정하고, 분리된 AWS 환경의 불변 백업으로 핵심 서비스를 복구하는 멀티클라우드 DR 아이디어
 - **담당 역할**: GCP 3-Tier 인프라 WAS 구성(Tomcat MIG, 골든 이미지, Auto Scaling·헬스 체크) 및 아키텍처 설계·핸드오프 문서화
 
-### 2. GCP 3-Tier 구축 프로젝트 NOVA (PROFIT 동물병원 Lift & Shift)
+### 3. GCP 3-Tier 구축 프로젝트 NOVA (PROFIT 동물병원 Lift & Shift)
 - **Repository**: [github.com/bespin-nova/WAS](https://github.com/bespin-nova/WAS) · [github.com/bespin-nova/WEB](https://github.com/bespin-nova/WEB)
 - **기간 및 규모**: `2026.09–2026.10` · 4인 팀 프로젝트 (**본인 역할: WAS 및 모니터링 담당**)
 - **아키텍처 흐름**: `사용자 → Cloud Armor · External HTTPS LB · Cloud CDN → WEB MIG(Apache) → Internal NLB(8080) → WAS MIG(Tomcat) → PSC → Cloud SQL HA` (SSH는 IAP 전용, 방화벽 태그+CIDR 최소 권한 허용)
@@ -90,7 +115,7 @@
 
 </details>
 
-### 3. 홈랩 Kubernetes & ArgoCD GitOps 파이프라인 (`homelab-k8s`)
+### 4. 홈랩 Kubernetes & ArgoCD GitOps 파이프라인 (`homelab-k8s`)
 - **Repository**: [github.com/qorgh529/homelab-k8s](https://github.com/qorgh529/homelab-k8s)
 - **기간 및 규모**: `2026.04–진행중` · 1인 개인 구축 프로젝트
 - **아키텍처 흐름**: `사용자 → 라우터(80/443 포트포워딩) → Nginx Ingress Controller (cert-manager Let's Encrypt TLS) → hub / web-portal(FastAPI · PostgreSQL PVC · Redis) / gitea / argocd`
@@ -107,7 +132,7 @@
 
 </details>
 
-### 4. Kubernetes Pod 생성 내부 동작 시각화 (`kube`)
+### 5. Kubernetes Pod 생성 내부 동작 시각화 (`kube`)
 - **Repository**: [github.com/qorgh529/kube](https://github.com/qorgh529/kube)
 - **개요**: `kubectl`로 Pod 6개를 배포할 때 클러스터 내부 컴포넌트(`kube-apiserver`, `etcd`, `Deployment/ReplicaSet Controller`, `kube-scheduler`, `kubelet`, `CRI/CNI/CSI`, `cloud-controller-manager`)가 상호작용하는 **11단계 메커니즘을 Draw.io 다이어그램과 인터랙티브 HTML로 시각화**한 학습 레포지토리
 
@@ -125,7 +150,7 @@
 
 | 기간 | 교육기관&nbsp;·&nbsp;과정 | 주요 학습 및 수행 내용 |
 | :---: | :--- | :--- |
-| `2026.06–2026.12` | **베스핀글로벌**<br><sub>멀티클라우드&nbsp;부트캠프&nbsp;5회차&nbsp;(1,000h)</sub> | • AWS · Azure · GCP · NCP 멀티클라우드 인프라 구축 및 운영<br>• GCP 3-Tier 아키텍처 구축 팀 프로젝트 수행, 멀티클라우드 사이버 복구(DR) 팀 프로젝트 기획 중 |
+| `2026.06–2026.12` | **베스핀글로벌**<br><sub>멀티클라우드&nbsp;부트캠프&nbsp;5회차&nbsp;(1,000h)</sub> | • AWS · Azure · GCP · NCP 멀티클라우드 인프라 구축 및 운영<br>• GCP 3-Tier 아키텍처 구축 팀 프로젝트, Amazon EKS 3-Tier 개인 프로젝트 수행, 멀티클라우드 사이버 복구(DR) 팀 프로젝트 기획 중 |
 | `2020.03–2020.09` | **코리아AI아카데미**<br><sub>정보시스템&nbsp;보안&nbsp;운영·사고분석&nbsp;(868h)</sub> | • Linux/Windows 서버 운영 및 네트워크(VLAN·라우팅·Wireshark 패킷 분석)<br>• 모의해킹·취약점·침해사고 분석 및 보안 솔루션(Firewall·VPN) 운영 |
 | `2016.03–2020.02` | **인하공업전문대학**<br><sub>금속재료과&nbsp;·&nbsp;전문학사&nbsp;졸업</sub> | • 금속재료 전공 |
 
