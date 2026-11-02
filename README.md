@@ -164,8 +164,8 @@
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=qorgh529&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub Stats" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=qorgh529&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" />
+  <img height="165" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=qorgh529&theme=tokyonight" alt="GitHub Stats" />
+  <img height="165" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=qorgh529&theme=tokyonight" alt="Most Commit Language" />
 </p>
 
 ## 📫 Contact
